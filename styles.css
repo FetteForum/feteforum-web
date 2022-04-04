@@ -38,9 +38,6 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background: #222;
-    height: 100vh;
-    display: grid;
-    place-items: center center;
 }
 
 section.events{
