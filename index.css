@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+:root{
+    --main-color:#3867d6;
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+
+body{
+    background: #333;
+}
+
+section.events{
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Arial',sans-serif;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
+    border-radius: .5rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background: var(--main-color);
+}
+
+.header{
+    position: fixed;
+    margin-bottom: 50px;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+
+}
+
+.header .logo{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+
+
+.home .content h3{
+    color: rgb(255, 236, 236);
+    font-size: 5.5rem;
+    /* text-transform: uppercase; */
+}
+
+.home .content h3 span{
+    font-size: 5.5rem;
+    color:var(--main-color);
+    text-transform: capitalize;
+}
+
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* events */
+
+.btnE{
+    display:flex; 
+    justify-content:center;
+    margin: 5rem 3rem 5rem 3rem;
+    padding: 1rem 6rem;
+    font-size: 4.5rem;
+    border-radius: 1rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-bars{
+        display: initial;
+
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        border-top: .1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a{
+        display: flex;
+        background: #222;
+        border-radius: .5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2.5rem;
+    }
+    
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+        /* margin-bottom: 25px; */
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 35rem;
+    }
+
+
+
+}
+
+@media (max-width:370px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 37rem;
+    }
+
+    .btnE{
+        display:flex; 
+        justify-content:center;
+        margin: 0.5rem 1.5rem 2.5rem 1.5rem;
+        padding: 0.5rem 0.3rem;
+        font-size: 3.5rem;
+        border-radius: 1rem;
+        background: var(--main-color);
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
