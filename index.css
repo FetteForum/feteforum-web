@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
 :root{
-    --main-color:#3867d6;
+    --dark-mode:#333;
+    --light-mode:#fff;
+    --main-color:#ff2c1f; 
+    /* #3867d6 - blue 
+      #ff2c1f - red
+      #ffA500
+      #ff6700
+    */
 }
 
 *{
@@ -27,7 +34,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: #444;
+    background: rgb(255, 255, 255);
 }
 
 html::-webkit-scrollbar-thumb{
@@ -36,9 +43,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-body{
-    background: #333;
-}
+/* body{
+    background: #444;
+} */
 
 section.events{
     height: 100vh;
@@ -73,7 +80,7 @@ section{
     margin-bottom: 50px;
     top: 0; left: 0; right: 0;
     z-index: 10000;
-    background: #333;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +90,7 @@ section{
 
 .header .logo{
     font-weight: bolder;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 2.5rem;
 }
 
@@ -93,7 +100,7 @@ section{
 
 .header .navbar a{
     font-size: 1.7rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-left: 2rem;
 }
 
@@ -104,7 +111,7 @@ section{
 
 #menu-bars{
     font-size: 3rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     display: none;
 }
@@ -119,7 +126,7 @@ section{
 
 
 .home .content h3{
-    color: rgb(255, 236, 236);
+    color: rgb(0, 0, 0);
     font-size: 5.5rem;
     /* text-transform: uppercase; */
 }
