@@ -11,7 +11,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -62,7 +62,83 @@ section{
     font-weight: 600;
 }
 
+.btnH{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 1.75rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
+    border-radius: .5rem;
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btnP{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
+    border-radius: .5rem;
+    background-image: url(Test.jpg);
+    background-size:auto;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.boxP{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: inline-block;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+}
+
+.boxH{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: inline-block;
+    background-image: url(motm-header-may.png);
+    background-size:cover;
+    /* background-color: rgb(248, 244, 244); */
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+}
+
+.box-parent{
+    text-align: center;
+}
+
 .header{
+    
     position: fixed;
     margin-bottom: 50px;
     top: 0; left: 0; right: 0;
@@ -112,7 +188,7 @@ section{
 .home .content h3 span{
     font-size: 5.5rem;
     color:var(--main-color);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .home .content{
@@ -159,15 +235,21 @@ section{
     cursor: pointer;
     font-weight: 600;
 }
-.buttons{
-    margin-top: 5%;
+
+.head-up{
+    margin-top: 5rem;
 }
 
-.latest,
-.movies{
+.latest{
 
     font-size: 2rem;
-    padding-top: 90px;
+    margin-top: 15rem;
+    background-color: #ffffff
+}
+
+.movies{
+    font-size: 2rem;
+    margin-top: 10rem;
     background-color: #ffffff
 }
 
@@ -308,6 +390,7 @@ section{
 
 
 .cards{
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -515,6 +598,9 @@ main{
 
 }
 
+
+
+
 @media (max-width:450px){
 
     html{
@@ -548,6 +634,8 @@ main{
     .home .home-slider .swiper-slide{
         width: 35rem;
     }
+
+
 
 
 
