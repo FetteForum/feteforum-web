@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
 :root{
-    --main-color:#ff2c1f;
+    --main-color:#ff0d00;
 }
 
 *{
@@ -51,11 +51,12 @@ section{
 .btn{
     margin-top: 1rem;
     margin-right: 3rem;
+    margin-bottom: 1rem;
     display: inline-block;
     padding: 1rem 3.2rem;
     font-size: 2.25rem;
     border-radius: .5rem;
-    background: #ff2c1f;
+    background: #ff0d00;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
@@ -102,6 +103,18 @@ section{
     display: none;
 }
 
+.home .content h3{
+    color: rgb(0, 0, 0);
+    font-size: 5.5rem;
+    /* text-transform: uppercase; */
+}
+
+.home .content h3 span{
+    font-size: 5.5rem;
+    color:var(--main-color);
+    text-transform: capitalize;
+}
+
 .home .content{
     text-align: center;
     padding-top: 6rem;
@@ -109,21 +122,45 @@ section{
     max-width: 70rem;
 }
 
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 
 /* events */
 
 .btnE{
-    display:flex; 
-    justify-content:center;
-    margin: 5rem 3rem 5rem 3rem;
+    display:inline-block; 
+    position: relative;
+  /* Move the element to the right by 50% of the container's width */
+    left: 50%; 
+   margin-top: 2rem;
+  /* Calculates 50% of the element's width, and moves it by that */ 
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
     padding: 1rem 6rem;
     font-size: 4.5rem;
     border-radius: 1rem;
-    background: var(--main-color);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-size: cover;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
+}
+.buttons{
+    margin-top: 5%;
 }
 
 .latest,
@@ -138,6 +175,7 @@ section{
 .heading{
     border-bottom: 3px solid var(--main-color);
     margin: 30px 30px 30px 30px;
+    /* text-align: center; */
 }
 
 .showcase-heading{
@@ -344,6 +382,44 @@ main{
 
 
 
+:root{
+    --primary-color:#ffffff;
+    --secondary-color: #fff;
+}
+body{
+    background-color: #fff;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.movie{
+    width: 200px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    align-items: center;
+    padding: 0.5rem 5rem 2.5rem;
+}
+
+.movie-info h3{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
 
 
 
@@ -469,6 +545,11 @@ main{
         grid-column-end: span 9 ;
     }
 
+    .home .home-slider .swiper-slide{
+        width: 35rem;
+    }
+
+
 
 
 }
@@ -496,7 +577,8 @@ main{
         padding: 0.5rem 0.3rem;
         font-size: 5rem;
         border-radius: 1rem;
-        background: var(--main-color);
+        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+        background-size: cover;
         color: #fff;
         cursor: pointer;
         font-weight: 600;
@@ -544,6 +626,10 @@ main{
         padding-bottom: 10%;
         overflow: hidden;
         position: relative;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 37rem;
     }
 
 
