@@ -1,76 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Responsive Grid Cards</title>
-    <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="Events.css">
+    <link rel="stylesheet" href="Share.css">
+    <link rel="stylesheet" href="atcb.min.css">
+
+
+  
+
+
+
+    
+
+    <!-- font awesome cdn link -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    
+
 </head>
 <body>
 
+    <header class="header" id="header">
 
-    <div class="cards">
-        <div class="card card1">
-            
-            <div class="details">
-                <h3>Paint Party</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias explicabo maxime necessitatibus odio temporibus voluptatum libero rerum accusamus atque dicta tempora voluptate veniam architecto vero eum, fugit deleniti laboriosam.</p>
+        <a href="Index.html" class="logo">
+            <i class='bx bxs-calendar' ></i><span>F</span>ette<span>F</span>orum
+        </a>
+            <div class="bx bx menu" id="menu-icon"></div>
 
-                <h3>Friday
-                    December 5<sup>th</sup>  2022</h3>
-                <div title="Add to Calendar" class="addeventatc">
-                    Add to Calendar
-                    <span class="start">12/5/2022 08:00 AM</span> <!-- mm/dd/yyyy -->
-                    <span class="end">12/5/2022 10:00 AM</span>
-                    <span class="timezone">America/Los_Angeles</span>
-                    <span class="title">Summary of the event</span>
-                    <span class="description">Description of the event</span>
-                    <span class="location">Location of the event</span>
-                </div>
-                
+        <ul class="navbar">
+            <a href="Home.html">home</a>
+            <a href="#service">services</a>
+            <a href="#events">events</a>
+            <a href="#price">pricing</a>
+            <a href="#review">reviews</a>
+            <a href="#about">about</a>
+            <a href="#contact">contacts</a>
+        </ul>
 
-                <h3>Woodford Cafe</h3>
-                <div title="View Location" >
-                    <button onclick="window.location.href='//www.google.com/maps/place/Woodford+Cafe/@10.5303535,-61.4112463,17z/data=!3m1!4b1!4m5!3m4!1s0x8c35f96618fe0787:0x8e66cb0cac7090c9!8m2!3d10.5303462!4d-61.4090563_blank';"  type="button" class="button" >
-                        <span class="button__icon">
-                            <ion-icon name="location-outline"></ion-icon>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        
+
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="left"></div>
+        <div class="right">
+          <div class="content">
+            <!-- Name -->
+            <div class="top">
+              <h1>Paint Party</h1> 
+              <div class="wrapper">
+                <div class="toggle_button">
+                  <ul>
+                    <li>
+                      <a class="share_btn">
+                        <!-- <span class="text"></span> -->
+                        <span class="icon"><i class="fas fa-plus"></i></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sm facebook">
+                        <span class="icon">
+                          <i class="fab fa-facebook-f"></i>
                         </span>
-                        <span class="button__text">Location</span>
-                        <a href="" class="locate">
-                        </a>
-                    </button>
-                   
+                        <span class="text"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sm twitter">
+                        <span class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                        <span class="text"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sm instagram">
+                        <span class="icon">
+                          <i class="fab fa-instagram"></i>
+                        </span>
+                        <span class="text"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="sm reddit">
+                        <span class="icon">
+                          <i class="fab fa-reddit-alien"></i>
+                        </span>
+                        <span class="text"></span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-
-                <h3>Promotions</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam qui fugiat saepe tenetur nihil ipsam blanditiis odio. Praesentium eligendi laudantium hic neque delectus atque modi. Dolor tenetur impedit molestiae fugiat iste consectetur nesciunt obcaecati animi! Saepe suscipit eveniet similique.</p>
-
-
-                <a href="Listed.html" class="btn1"> Get Listed</a>
-                
-
-                <h3>Purchase Tickets</h3>
-
-                <h3>More Info</h3>
-                <a href="Contact.html" class="btn2">Contact Us</a>
-                
-
-                <!-- <div class="container">
-                    <img src="images/blue-clouds-paint-party-flyer-design-template-da745be8387ec4ff1ad77635e88eca36_screen.jpg" alt="las vegas">
-                </div> -->
+              </div>
+            
+            <script>
+              var share_btn = document.querySelector(".share_btn");
+              var toggle_button = document.querySelector(".toggle_button");
+            
+              share_btn.addEventListener("click", function(){
+                toggle_button.classList.toggle("active");
+              })
+            </script>
+              
             </div>
+            
+            <!-- Date & Time -->
+            <h2>25 <sup>th</sup> December 2022 <br> 10pm till</h2>
+            <div class="atcb" >
+              {
+                "name":"Add the title of your event",
+                "description":"A nice description does not hurt",
+                "startDate":"2022-02-21",
+                "endDate":"2022-03-24",
+                "startTime":"10:13",
+                "endTime":"17:57",
+                "location":"Somewhere over the rainbow",
+                "label":"Add to Calendar",
+                "options":[
+                  "Apple",
+                  "Google",
+                  "iCal",
+                  "Microsoft365",
+                  "MicrosoftTeams",
+                  "Outlook.com",
+                  "Yahoo"
+                ]
+              }
+            </div>
+            <!-- Location -->
+            <h2>Electro House</h2>
+            <a href=" http://maps.google.com/?q=115 Dinsley Junction, Eastern Main Road, Tacarigua"  target="_blank" class="locate">View Location</a>
+            <!-- Promos -->
+            <h2>Promotions</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eos laborum eius officiis, sit minus?</p>
+            <!-- Purchases -->
+            <h2>Purchase Tickets</h2><a href="" class="btn"></a>
+            <p>Ladies Free | Early Birds $100 | Regular $250</p>
+
+            
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 
 
+    <!-- custom js file link -->
+    <script src="swiper-bundle.min.js"></script>
+    <script src="Home.js"></script>
 
-    <script type="text/javascript" src="calendar.js" async defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-
-    <script src="script/script.js"></script>
-
+    <script src="indexscript.js"></script>
+    <script src="atcb.min.js" defer></script>
+    
+    
 </body>
 </html>
