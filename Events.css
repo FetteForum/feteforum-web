@@ -148,18 +148,9 @@ section{
 }
 
 
-.left{
-  width: 50%;
-  height: 700px;
-  background: url(/blue-clouds-paint-party-flyer-design-template-da745be8387ec4ff1ad77635e88eca36_screen.jpg) no-repeat center / cover; 
-  border-radius: 10px;
-}
-
-
-
 
 .right{
-    width: 50%;
+    width: 100%;
     min-height: 400px;
     background-color: #f1ebeb;
     display: flex;
@@ -416,14 +407,10 @@ section{
  .container{
     flex-direction: column;
 }
-.left{
-    width:100%;
-    min-height: 200px;
-    padding: 10px;
-}
+
 
 .right{
-    width: 80%;
+    width: 100%;
     margin: 0;
     margin-top: -100px;
 }
@@ -466,11 +453,6 @@ section{
         /* margin-bottom: 25px; */
     }
 
-    .left{
-        width:100%;
-        height: 500px;
-        padding: 20px;
-    }
 
     .right{
         width: 100%;
