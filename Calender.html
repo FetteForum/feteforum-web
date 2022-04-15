@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Calendar.css">
+
+
+
+
+  
+
+
+
+    
+
+    <!-- font awesome cdn link -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    
+
+</head>
+<body>
+
+    <header class="header" id="header">
+
+        <a href="Index.html" class="logo">
+            <i class='bx bxs-calendar' ></i><span>F</span>ette<span>F</span>orum
+        </a>
+            <div class="bx bx menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <a href="#Jan">January</a>
+            <a href="#Feb">Febraury</a>
+            <a href="#Mar">March</a>
+            <a href="#Apr">April</a>
+            <a href="#May">May</a>
+            <a href="#June">June</a>
+            <a href="#July">July</a>
+            <a href="#Aug">August</a>
+            <a href="#Sept">September</a>
+            <a href="#Oct">October</a>
+            <a href="#Nov">November</a>
+            <a href="#Dec">December</a>
+        </ul>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+        
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3><span>C</span>alendar of <span>E</span>vents</h3>
+        </div>
+    </section>
+
+    <div class="wrapper">
+        <div id="search-container">
+            <form action="" onsubmit=""> 
+            <input type="search" id="search-input"
+            placeholder="Search event name here"/>
+            <button id="search">Search</button>
+        </form>
+        </div>
+        <div class="filter-box">
+           <a href="" class="button-value" data-filter="all">All</a>
+           <a href="" class="button-value" data-filter="ladiesfree">Ladies Free</a>
+           <a href="" class="button-value" data-filter="coolerfette">Cooler Fettes</a>
+           <a href="" class="button-value" data-filter="beachfette">Beach Fettes</a>
+
+        </div>
+    </div>
+
+    <!-- <div class="bar" id="header">
+
+        <ul class="navbar">
+            <a href="#home">January</a>
+            <a href="#services">Febraury</a>
+            <a href="#events">March</a>
+            <a href="#price">April</a>
+            <a href="#review">May</a>
+            <a href="#about">June</a>
+            <a href="#contact">July</a>
+            <a href="#contact">August</a>
+            <a href="#contact">September</a>
+            <a href="#contact">October</a>
+            <a href="#contact">November</a>
+            <a href="#contact">December</a>
+
+        </ul>
+
+        <div id="bars-low" class="fas fa-bars"></div>
+        
+
+    </div> -->
+
+    <div id="Jan">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                January
+            </h2>
+        </div>
+        <main>
+            <section class="cards">
+                <a href="Events.html" class="card ladiesfree">
+                    <div class="card_image-container">
+                        <img src="blue-clouds-paint-party-flyer-design-template-da745be8387ec4ff1ad77635e88eca36_screen.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            25<sup>th</sup> December 2022 <br> <br>
+                            7pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Early Bird $100 <br>Regular $250 <br>Ladies Free</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Events.html" class="card ladiesfree">
+                    <div class="card_image-container">
+                        <img src="3.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            29<sup>th</sup> June 2022 <br> <br>
+                            5pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Early Bird $300 <br>Regular $450 <br>Ladies Free <br> Drinks Free</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="Events.html" class="card">
+                    <div class="card_image-container">
+                        <img src="D662BA3D-2A64-459F-957E-7305D6C4ADBD.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            29<sup>th</sup> March 2022 <br> <br>
+                            9pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Regular $250 </p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="Events.html" class="card">
+                    <div class="card_image-container">
+                        <img src="5.png" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            27<sup>th</sup> June 2022 <br> <br>
+                            9pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium">Regular $350 </p>
+                        </div>
+                    </div>
+                </a>
+                
+    
+    
+                
+            </section>
+        </main>
+    </div>
+
+    <div id="Feb">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                Febraury
+            </h2>
+        </div>
+        <main>
+            <section class="cards">
+                <a href="Events.html" class="card ladiesfree">
+                    <div class="card_image-container">
+                        <img src="blue-clouds-paint-party-flyer-design-template-da745be8387ec4ff1ad77635e88eca36_screen.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            25<sup>th</sup> December 2022 <br> <br>
+                            7pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Early Bird $100 <br>Regular $250 <br>Ladies Free</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="Events.html" class="card ladiesfree">
+                    <div class="card_image-container">
+                        <img src="3.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            29<sup>th</sup> June 2022 <br> <br>
+                            5pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Early Bird $300 <br>Regular $450 <br>Ladies Free <br> Drinks Free</p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="Events.html" class="card coolerfette">
+                    <div class="card_image-container">
+                        <img src="D662BA3D-2A64-459F-957E-7305D6C4ADBD.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            29<sup>th</sup> March 2022 <br> <br>
+                            9pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium"> Regular $250 </p>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="Events.html" class="card">
+                    <div class="card_image-container">
+                        <img src="5.png" alt="">
+                    </div>
+                    <div class="card_content">
+                        <p class="card_title text--medium">
+                            27<sup>th</sup> June 2022 <br> <br>
+                            9pm till
+                        </p>
+                        <div class="card__info">
+                            <p class="text--medium"></p>
+                            <p class="card_price text--medium">Regular $350 </p>
+                        </div>
+                    </div>
+                </a>
+                
+    
+    
+                
+            </section>
+        </main>
+    </div>
+    <div id="Mar">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                March
+            </h2>
+        </div>
+    </div>
+
+    <div id="Apr">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                April
+            </h2>
+        </div>
+    </div>
+    <div id="May">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                May
+            </h2>
+        </div>
+    </div>
+    <div id="June">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                June
+            </h2>
+        </div>
+    </div>
+    <div id="July">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                July
+            </h2>
+        </div>
+    </div>
+    <div id="Aug">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                August
+            </h2>
+        </div>
+    </div>
+    <div id="Sept">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                September
+            </h2>
+        </div>
+    </div>
+    <div id="Oct">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                October
+            </h2>
+        </div>
+    </div>
+    <div id="Nov">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                November
+            </h2>
+        </div>
+    </div>
+    <div id="Dec">
+        <div class="latest">
+
+            <h2 class="thisweek-heading">
+                December
+            </h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+            
+
+                
+
+
+
+
+            
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+    
+    <script src="Eventcalendar.js"></script>
+    <script src="indexscript.js"></script>
+</body>
+</html>
