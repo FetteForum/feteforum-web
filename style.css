@@ -119,8 +119,8 @@ section{
     margin-bottom: 5rem;
     overflow: hidden;
     border-radius: .5rem;
-    height: 50rem;
-    width: 35rem;
+    height: 35rem;
+    width: 25rem;
 }
 
 .home .home-slider .swiper-slide img{
@@ -548,15 +548,8 @@ section{
     }
 
     .home .home-slider .swiper-slide{
-        width: 35rem;
+        width: 16rem;
     }
-    .home .home-slider .swiper-slide{
-        width: 35rem;
-    }
-
-
-
-
 
 
 }
@@ -647,7 +640,7 @@ section{
     }
 
     .home .home-slider .swiper-slide{
-        width: 37rem;
+        width: 15rem;
     }
 
     .btnE{
@@ -667,7 +660,7 @@ section{
     }
 
     .home .home-slider .swiper-slide{
-        width: 37rem;
+        width: 15rem;
     }
 
 
