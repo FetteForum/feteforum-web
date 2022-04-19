@@ -1,22 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
+@font-face {
+    font-family: LemonMilk;
+    src: url(Borg.ttf);
+  }
 :root{
-    --main-color:#3867d6;
+    --main-color:#ff0d00;
 }
 
 *{
-    font-family: 'Nunito', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
+
+
+.ul{
+    list-style: none;
+}
 html{
-    font-size: 62.5%;
+    font-size: 70.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
@@ -36,44 +45,22 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-body{
-    background: #222;
-}
-
-section.events{
-    height: 100vh;
-    display: grid;
-    place-items: center center;
-    font-family: 'Poppins',sans-serif;
-}
+/* body{
+    background: #444;
+} */
 
 section{
-    padding: 2rem 9%;
+    padding: 4.5rem 0 1.5rem;
 }
 
-.btn{
-    margin-top: 1rem;
-    margin-right: 3rem;
-    display: inline-block;
-    padding: 1rem 3.2rem;
-    font-size: 2.25rem;
-    border-radius: .5rem;
-    background: var(--main-color);
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.btn:hover{
-    background: var(--main-color);
-}
 
 .header{
+    
     position: fixed;
     margin-bottom: 50px;
     top: 0; left: 0; right: 0;
     z-index: 10000;
-    background: #333;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,8 +70,8 @@ section{
 
 .header .logo{
     font-weight: bolder;
-    color: #fff;
-    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
 }
 
 .header .logo span{
@@ -92,11 +79,10 @@ section{
 }
 
 .header .navbar a{
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
     margin-left: 2rem;
 }
-
 
 
 .header .navbar a:hover{
@@ -105,9 +91,21 @@ section{
 
 #menu-bars{
     font-size: 3rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     display: none;
+}
+
+.home .content h1{
+    color: rgb(0, 0, 0);
+    font-size: 6rem;
+    /* text-transform: uppercase; */
+}
+
+.home .content h1 span{
+    font-size: 7rem;
+    color:var(--main-color);
+    /* text-transform: capitalize; */
 }
 
 .home .content{
@@ -117,25 +115,12 @@ section{
     max-width: 70rem;
 }
 
-
-
-.home .content h3{
-    color: #fff;
-    font-size: 5.5rem;
-    text-transform: uppercase;
-}
-
-.home .content h3 span{
-    font-size: 5.5rem;
-    color:var(--main-color);
-    text-transform: capitalize;
-}
-
 .home .home-slider .swiper-slide{
+    margin-bottom: 5rem;
     overflow: hidden;
     border-radius: .5rem;
-    height: 50rem;
-    width: 35rem;
+    height: 35rem;
+    width: 25rem;
 }
 
 .home .home-slider .swiper-slide img{
@@ -144,129 +129,198 @@ section{
     object-fit: cover;
 }
 
+
+
+
 /* events */
 
-.heading{
-    margin-top: 10rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 4rem;
-}
 
-.heading span{
-    color: var(--main-color);
-    text-transform: uppercase;
-}
-
-
-
-.eventpost{
-    margin-top: 50px;
-    width: 100%;
-    max-width: 98rem;
-    padding: 5rem;
-    background-color: #333;
-    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
-    display: flex;
-    align-items: center;
-    border-radius: .8rem;
-}
-
-.eventpostimg{
-    min-height: 35rem;
-    max-width: 35rem;
-    height: 35rem;
-    width: 35rem;
-    transform: translateX(-8rem);
-    position: relative;
-}
-
-.eventpostimg img{
-    width: 100%;
-    height: 100%;
-    height: 35rem;
-    width: 35rem;
-    object-fit:fill;
-    display: block;
-    border-radius: .8rem;
-}
-
-.eventpostdate span{
-    display: block;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 5rem;
-    font-weight: 800;
-    margin: .5rem 0;
-}
-
-.eventposttitle{
-    font-size: 2.5rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: var(--main-color);
-}
-
-.eventposttext{
-    margin-bottom: .3rem;
-    font-size: 1.4rem;
-    color: #fff;
-}
-
-.btn1{
+.btn{
     margin-top: 1rem;
     margin-right: 3rem;
+    margin-bottom: 1rem;
     display: inline-block;
-    padding: 1.6rem 6rem;
-    font-size: 3.4rem;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
     border-radius: .5rem;
-    background: var(--main-color);
+    background: #ff0d00;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
 }
 
-.btn1:hover{
-    background: var(--main-color);
+.btnH{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 1.75rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
+    border-radius: .5rem;
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btnP{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding: 1rem 3.2rem;
+    font-size: 2.25rem;
+    border-radius: .5rem;
+    background-image: url(Test.jpg);
+    background-size:auto;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.boxP{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+}
+
+.boxpa{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 500px;
+    height: 325px;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: inline-block;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+    transform: translateY(-35%);
+}
+
+.boxpa h3{
+    margin-top: 100px;
+
+}
+
+.area{
+
+    margin: 1rem;
+    text-align: center;
+}
+
+
+.boxH{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(motm-header-may.png);
+    background-size:cover;
+    /* background-color: rgb(248, 244, 244); */
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+}
+
+.box-parent{
+    text-align: center;
+    display: inline-block;
 }
 
 .btnE{
-    display:flex; 
-    justify-content:center;
-    margin-top: 10rem;
-    margin-right: 3rem;
-    padding: 1.6rem 6rem;
-    font-size: 3.4rem;
-    border-radius: .5rem;
-    background: var(--main-color);
+    display:inline-block; 
+    position: relative;
+  /* Move the element to the right by 50% of the container's width */
+    left: 50%; 
+   margin-top: 2rem;
+  /* Calculates 50% of the element's width, and moves it by that */ 
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
+    padding: 1rem 6rem;
+    font-size: 4.5rem;
+    border-radius: 1rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-size: cover;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
 }
 
+.head-up{
+    margin-top: 5rem;
+}
 
+.latest{
 
+    font-size: 2rem;
+    margin-top: 15rem;
+    background-color: #ffffff
+}
 
+.movies{
+    font-size: 2rem;
+    margin-top: 10rem;
+    background-color: #ffffff
+}
 
+.thisweek-heading,
+.heading{
+    border-bottom: 3px solid var(--main-color);
+    margin: 30px 30px 30px 30px;
+    /* text-align: center; */
+}
 
+.showcase-heading{
+    font-size: 3rem;
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--main-color);
+    margin: 30px 30px 0px 30px;
+}
 
+#main{
+    padding-top: 80px;
+    box-sizing: border-box;
 
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
 /* media queries */
+
 
 
 @media (max-width:991px){
@@ -283,9 +337,91 @@ section{
         padding: 2rem;
     }
 
+    .showcase-box{
+        width: 322px;
+        height: 187px;
+    }
+
+    
+.boxP{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 150px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1.5rem 2.75rem;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
 }
 
-@media (max-width:768px){
+
+.boxpa{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 350px;
+    height: 225px;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: inline-block;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+    transform: translateY(-15%);
+}
+
+.boxpa h3{
+    margin-top: 100px;
+}
+
+
+.boxH{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 150px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1.5rem 2.75rem;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(motm-header-may.png);
+    background-size:cover;
+    /* background-color: rgb(248, 244, 244); */
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+}
+
+.box-parent{
+    text-align: center;
+    display: inline-block;
+}
+
+.latest{
+    margin-top: 20px;
+}
+
+
+}
+
+@media (max-width:1140px){
 
     #menu-bars{
         display: initial;
@@ -296,7 +432,7 @@ section{
         position: absolute;
         top: 0; left: 0; right: 0;
         border-top: .1rem solid #222;
-        background: #333;
+        background: rgb(224, 222, 222);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -310,7 +446,7 @@ section{
 
     .header .navbar a{
         display: flex;
-        background: #222;
+        background: rgb(255, 255, 255);
         border-radius: .5rem;
         padding: 1.3rem;
         margin: 1.3rem;
@@ -323,7 +459,87 @@ section{
 
 }
 
-@media (max-width:450){
+@media (max-width:590px){
+
+       
+.boxP{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 100px;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 2rem;
+}
+
+.head-up{
+    margin-top: 2.5rem;
+    margin-bottom: 2.25rem;
+}
+
+.boxpa{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 225px;
+    height: 175px;
+    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 1.6rem;
+    font-size: 3.75rem;
+    display: inline-block;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
+    transform: translateY(-1%);
+    
+}
+
+.boxpa h3{
+    transform: translateY(-75%);
+}
+
+
+
+.boxH{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: 100px;
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(motm-header-may.png);
+    background-size:cover;
+    /* background-color: rgb(248, 244, 244); */
+    border-radius: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+
+}
+
+
+@media (max-width:450px){
 
     html{
         font-size: 50%;
@@ -331,48 +547,228 @@ section{
 
     .header{
         padding: 1.5rem 2rem;
+        /* margin-bottom: 25px; */
     }
 
     .home .home-slider .swiper-slide{
-        width: 27rem;
+        width: 25rem;
     }
+
+    .latest{
+        margin-top: 20px;
+    }
+
 
 }
 
-@media screen and (max-width: 1068px){
-    .eventpost{
-        margin-top: 100px;
-        max-width: 80rem;
-    }
 
-    .eventpostimg{
-        min-width: 30rem;
-        max-width: 30rem;
+@media (max-width:398px){
+
+       
+    .boxP{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 85px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        /* background-color: rgb(248, 244, 244); */
+        background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 3rem;
+        padding-bottom: 2rem;
     }
     
-}
-
-@media screen and (max-width: 868px){
-    .eventpost{
-        margin-top: 100px;
-        max-width: 70rem;
+    .boxpa{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 175px;
+        height: 175px;
+        text-align: center;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 1.6rem;
+        font-size: 3.25rem;
+        display: inline-block;
+        /* background-color: rgb(248, 244, 244); */
+        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 3rem;
+        padding-bottom: 3rem;
+        transform: translateY(-5%);
+        
     }
-}
-
-
-
-@media screen and (max-width: 768px){
-    .eventpost{
-        margin-top: 100px;
-        padding: 2.5rem;
+    
+    
+    
+    .boxH{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 85px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 1.25rem 2.5rem;
+        font-size: 1.25rem;
+        display: flex;
         flex-direction: column;
+        background-image: url(motm-header-may.png);
+        background-size:cover;
+        /* background-color: rgb(248, 244, 244); */
+        border-radius: 3rem;
     }
 
-    .eventpostimg{
-        min-width: 100%;
-        max-width: 100%;
-        transform: translate(0rem, -8rem);
+    .latest{
+        margin-top: 20px;
     }
+    
+    
+}
+    
+
+@media (max-width:370px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .btn{
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 15rem;
+    }
+
+    .btnE{
+        padding: 0.5rem 0.3rem;
+        font-size: 5rem;
+        border-radius: 1rem;
+        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+        background-size: cover;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .showcase-box{
+        width: 215px;
+        height: 125px;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 20rem;
+    }
+
+    .latest{
+        margin-top: 20px;
+    }
+
+
+}
+
+
+
+@media (max-width:333px){
+
+       
+    .boxP{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 55px;
+        height: 40px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 0.95rem;
+        display: flex;
+        flex-direction: column;
+        /* background-color: rgb(248, 244, 244); */
+        background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 1.5rem;
+
+    }
+
+    .boxP h3{
+        margin-top: 3px;
+        transform: translateX(-10px);
+
+    }
+    
+    .boxpa{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 105px;
+        height: 95px;
+        text-align: center;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 1.6rem;
+        font-size: 1.75rem;
+        display: inline-block;
+        /* background-color: rgb(248, 244, 244); */
+        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+        background-size:cover;
+        background-repeat: no-repeat;
+        border-radius: 1.5rem;
+        transform: translateY(55%);
+        
+    }
+
+    .head-up{
+        margin-top: 0;
+    }
+    
+    .boxpa h3{
+        transform: translateY(-75px);
+    }
+    
+    
+    .boxH{
+        color: #fff;
+        text-shadow: 2px 2px #000000;
+        width: 55px;
+        height: 40px;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 1.25rem 2.5rem;
+        font-size: 0.95rem;
+        display: flex;
+        flex-direction: column;
+        background-image: url(motm-header-may.png);
+        background-size:cover;
+        /* background-color: rgb(248, 244, 244); */
+        border-radius: 1.5rem;
+    }
+
+    .boxH h3{
+        margin-top: 5px;
+        transform: translateX(-10px);
+
+    }
+    
+    
     
 }
 
