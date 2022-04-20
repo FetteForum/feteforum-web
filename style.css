@@ -15,17 +15,16 @@
     outline: none;
     border: none;
     text-decoration: none;
-    /* text-transform: capitalize; */
+    text-transform: capitalize;
     transition: .2s linear;
 }
-
 
 
 .ul{
     list-style: none;
 }
 html{
-    font-size: 70.5%;
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
@@ -44,14 +43,6 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-
-/* body{
-    background: #444;
-} */
-
-section{
-    padding: 4.5rem 0 1.5rem;
-}
 
 
 .header{
@@ -79,7 +70,7 @@ section{
 }
 
 .header .navbar a{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(0, 0, 0);
     margin-left: 2rem;
 }
@@ -94,7 +85,9 @@ section{
     color: rgb(0, 0, 0);
     cursor: pointer;
     display: none;
-}
+} 
+
+/* body */
 
 .home .content h1{
     color: rgb(0, 0, 0);
@@ -111,75 +104,8 @@ section{
 .home .content{
     text-align: center;
     padding-top: 6rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     max-width: 70rem;
-}
-
-.home .home-slider .swiper-slide{
-    margin-bottom: 5rem;
-    overflow: hidden;
-    border-radius: .5rem;
-    height: 35rem;
-    width: 25rem;
-}
-
-.home .home-slider .swiper-slide img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-
-
-
-/* events */
-
-
-.btn{
-    margin-top: 1rem;
-    margin-right: 3rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    padding: 1rem 3.2rem;
-    font-size: 2.25rem;
-    border-radius: .5rem;
-    background: #ff0d00;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.btnH{
-    margin-top: 1rem;
-    margin-right: 3rem;
-    margin-left: 1.75rem;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    padding: 1rem 3.2rem;
-    font-size: 2.25rem;
-    border-radius: .5rem;
-    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.btnP{
-    margin-top: 1rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    padding: 1rem 3.2rem;
-    font-size: 2.25rem;
-    border-radius: .5rem;
-    background-image: url(Test.jpg);
-    background-size:auto;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
 }
 
 
@@ -187,6 +113,7 @@ section{
     color: #fff;
     text-shadow: 2px 2px #000000;
     width: auto;
+    height: 125px;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -206,8 +133,8 @@ section{
 .boxpa{
     color: #fff;
     text-shadow: 2px 2px #000000;
-    width: 500px;
-    height: 325px;
+    width: 450px;
+    height: 250px;
     text-align: center;
     margin-left: 2rem;
     margin-bottom: 1rem;
@@ -221,7 +148,7 @@ section{
     background-repeat: no-repeat;
     border-radius: 3rem;
     padding-bottom: 3rem;
-    transform: translateY(-35%);
+    transform: translateY(-10%);
 }
 
 .boxpa h3{
@@ -230,7 +157,7 @@ section{
 }
 
 .area{
-
+    position: relative;
     margin: 1rem;
     text-align: center;
 }
@@ -240,6 +167,7 @@ section{
     color: #fff;
     text-shadow: 2px 2px #000000;
     width: auto;
+    height: 125px;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -260,62 +188,40 @@ section{
     display: inline-block;
 }
 
-.btnE{
-    display:inline-block; 
-    position: relative;
-  /* Move the element to the right by 50% of the container's width */
-    left: 50%; 
-   margin-top: 2rem;
-  /* Calculates 50% of the element's width, and moves it by that */ 
-  /* amount across the X-axis to the left */
-  transform: translateX(-50%);
-    padding: 1rem 6rem;
-    font-size: 4.5rem;
-    border-radius: 1rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
-    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-    background-size: cover;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.head-up{
-    margin-top: 5rem;
-}
-
-.latest{
-
-    font-size: 2rem;
-    margin-top: 15rem;
-    background-color: #ffffff
-}
-
-.movies{
-    font-size: 2rem;
-    margin-top: 10rem;
-    background-color: #ffffff
-}
-
-.thisweek-heading,
-.heading{
-    border-bottom: 3px solid var(--main-color);
-    margin: 30px 30px 30px 30px;
-    /* text-align: center; */
-}
-
-.showcase-heading{
-    font-size: 3rem;
-    background-color: #ffffff;
-    border-bottom: 3px solid var(--main-color);
-    margin: 30px 30px 0px 30px;
-}
-
 #main{
-    padding-top: 80px;
-    box-sizing: border-box;
-
+    padding-top: 2px;
+    background-color: #ffffff;
 }
+
+.featured-heading{
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    border-bottom: 3px solid var(--main-color);
+    margin: 5px 20px 20px 20px;
+    font-size: 4rem;
+}
+
+.featured-box{
+    width: 250px;
+    height: 430px;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0px 20px 10px 20px;
+    overflow: hidden;
+}
+
+.featured-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+ 
+
+
 
 
 
@@ -331,91 +237,22 @@ section{
 
     .header{
         padding: 1.5rem 2rem;
-    }
+    } 
 
-    section{
-        padding: 2rem;
-    }
-
-    .showcase-box{
-        width: 322px;
-        height: 187px;
-    }
-
-    
-.boxP{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 150px;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 1.5rem 2.75rem;
-    font-size: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(248, 244, 244); */
-    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    padding-bottom: 3rem;
+    .featured-box{
+    width: 250px;
+    height: 430px;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0px 20px 10px 20px;
+    overflow: hidden;
 }
 
-
-.boxpa{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 350px;
-    height: 225px;
-    text-align: center;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    padding: 2rem 3.2rem;
-    font-size: 3.75rem;
-    display: inline-block;
-    /* background-color: rgb(248, 244, 244); */
-    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    padding-bottom: 3rem;
-    transform: translateY(-15%);
-}
-
-.boxpa h3{
-    margin-top: 100px;
-}
-
-
-.boxH{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 150px;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 1.5rem 2.75rem;
-    font-size: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    background-image: url(motm-header-may.png);
-    background-size:cover;
-    /* background-color: rgb(248, 244, 244); */
-    border-radius: 3rem;
-    padding-bottom: 3rem;
-}
-
-.box-parent{
-    text-align: center;
-    display: inline-block;
-}
-
-.latest{
-    margin-top: 20px;
+.featured-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 
@@ -452,91 +289,11 @@ section{
         margin: 1.3rem;
         font-size: 2.5rem;
     }
-    
-    .home .content h3{
-        font-size: 4rem;
-    }
-
-}
-
-@media (max-width:590px){
-
-       
-.boxP{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 100px;
-    text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 1.5rem 2.5rem;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(248, 244, 244); */
-    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    padding-bottom: 2rem;
-}
-
-.head-up{
-    margin-top: 2.5rem;
-    margin-bottom: 2.25rem;
-}
-
-.boxpa{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 225px;
-    height: 175px;
-    text-align: center;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    padding: 1rem 1.6rem;
-    font-size: 3.75rem;
-    display: inline-block;
-    /* background-color: rgb(248, 244, 244); */
-    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    padding-bottom: 3rem;
-    transform: translateY(-1%);
-    
-}
-
-.boxpa h3{
-    transform: translateY(-75%);
-}
-
-
-
-.boxH{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: 100px;
-    text-align: center;
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 1.25rem 2.5rem;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    background-image: url(motm-header-may.png);
-    background-size:cover;
-    /* background-color: rgb(248, 244, 244); */
-    border-radius: 3rem;
-    padding-bottom: 2rem;
-}
-
 
 
 }
+
+
 
 
 @media (max-width:450px){
@@ -547,93 +304,10 @@ section{
 
     .header{
         padding: 1.5rem 2rem;
-        /* margin-bottom: 25px; */
+        margin-bottom: 25px;
     }
-
-    .home .home-slider .swiper-slide{
-        width: 25rem;
-    }
-
-    .latest{
-        margin-top: 20px;
-    }
-
 
 }
-
-
-@media (max-width:398px){
-
-       
-    .boxP{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 85px;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 1.5rem 2.5rem;
-        font-size: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        /* background-color: rgb(248, 244, 244); */
-        background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
-        background-size:cover;
-        background-repeat: no-repeat;
-        border-radius: 3rem;
-        padding-bottom: 2rem;
-    }
-    
-    .boxpa{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 175px;
-        height: 175px;
-        text-align: center;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-        padding: 1rem 1.6rem;
-        font-size: 3.25rem;
-        display: inline-block;
-        /* background-color: rgb(248, 244, 244); */
-        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-        background-size:cover;
-        background-repeat: no-repeat;
-        border-radius: 3rem;
-        padding-bottom: 3rem;
-        transform: translateY(-5%);
-        
-    }
-    
-    
-    
-    .boxH{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 85px;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 1.25rem 2.5rem;
-        font-size: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        background-image: url(motm-header-may.png);
-        background-size:cover;
-        /* background-color: rgb(248, 244, 244); */
-        border-radius: 3rem;
-    }
-
-    .latest{
-        margin-top: 20px;
-    }
-    
-    
-}
-    
 
 @media (max-width:370px){
 
@@ -641,134 +315,9 @@ section{
         font-size: 50%;
     }
 
-    .btn{
-        padding: 0.5rem;
-        margin-right: 1rem;
-    }
-
     .header{
         padding: 1.5rem 2rem;
     }
 
-    .home .home-slider .swiper-slide{
-        width: 15rem;
-    }
-
-    .btnE{
-        padding: 0.5rem 0.3rem;
-        font-size: 5rem;
-        border-radius: 1rem;
-        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-        background-size: cover;
-        color: #fff;
-        cursor: pointer;
-        font-weight: 600;
-    }
-
-    .showcase-box{
-        width: 215px;
-        height: 125px;
-    }
-
-    .home .home-slider .swiper-slide{
-        width: 20rem;
-    }
-
-    .latest{
-        margin-top: 20px;
-    }
-
-
-}
-
-
-
-@media (max-width:333px){
-
-       
-    .boxP{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 55px;
-        height: 40px;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 1.5rem 2.5rem;
-        font-size: 0.95rem;
-        display: flex;
-        flex-direction: column;
-        /* background-color: rgb(248, 244, 244); */
-        background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
-        background-size:cover;
-        background-repeat: no-repeat;
-        border-radius: 1.5rem;
-
-    }
-
-    .boxP h3{
-        margin-top: 3px;
-        transform: translateX(-10px);
-
-    }
-    
-    .boxpa{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 105px;
-        height: 95px;
-        text-align: center;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-        padding: 1rem 1.6rem;
-        font-size: 1.75rem;
-        display: inline-block;
-        /* background-color: rgb(248, 244, 244); */
-        background-image: url(photo-1516450360452-9312f5e86fc7.avif);
-        background-size:cover;
-        background-repeat: no-repeat;
-        border-radius: 1.5rem;
-        transform: translateY(55%);
-        
-    }
-
-    .head-up{
-        margin-top: 0;
-    }
-    
-    .boxpa h3{
-        transform: translateY(-75px);
-    }
-    
-    
-    .boxH{
-        color: #fff;
-        text-shadow: 2px 2px #000000;
-        width: 55px;
-        height: 40px;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        padding: 1.25rem 2.5rem;
-        font-size: 0.95rem;
-        display: flex;
-        flex-direction: column;
-        background-image: url(motm-header-may.png);
-        background-size:cover;
-        /* background-color: rgb(248, 244, 244); */
-        border-radius: 1.5rem;
-    }
-
-    .boxH h3{
-        margin-top: 5px;
-        transform: translateX(-10px);
-
-    }
-    
-    
-    
 }
 
