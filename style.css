@@ -109,25 +109,24 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-.boxP{
-    color: #fff;
-    text-shadow: 2px 2px #000000;
-    width: auto;
-    height: 125px;
+
+
+
+
+.boxpa h3{
+    margin-top: 100px;
+
+}
+
+.area{
+    position: relative;
+    margin: 1rem;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    padding: 2rem 3.2rem;
-    font-size: 3.75rem;
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(248, 244, 244); */
-    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    padding-bottom: 3rem;
+}
+
+.box-parent{
+    text-align: center;
+    display: inline-block;
 }
 
 .boxpa{
@@ -151,17 +150,26 @@ html::-webkit-scrollbar-thumb{
     transform: translateY(-10%);
 }
 
-.boxpa h3{
-    margin-top: 100px;
-
-}
-
-.area{
-    position: relative;
-    margin: 1rem;
+.boxP{
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+    width: auto;
+    height: 125px;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 2rem 3.2rem;
+    font-size: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(248, 244, 244); */
+    background-image: url(club-promoter-job-description-5946x3964-20201119.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    padding-bottom: 3rem;
 }
-
 
 .boxH{
     color: #fff;
@@ -183,10 +191,6 @@ html::-webkit-scrollbar-thumb{
     padding-bottom: 3rem;
 }
 
-.box-parent{
-    text-align: center;
-    display: inline-block;
-}
 
 #main{
     padding-top: 2px;
@@ -258,6 +262,28 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+@media (max-width:1366px){
+    .boxpa{
+        width: 375px;
+        height: 200px;
+        font-size: 3rem;
+        transform: translateY(-30px);
+    }
+
+    .boxpa h3{
+        margin-top: 70px;
+    }
+
+    .boxP,
+    .boxH{
+        width: 250px;
+        height: 90px;
+        font-size: 3rem;
+    }
+
+    
+}
+
 @media (max-width:1140px){
 
     #menu-bars{
@@ -289,6 +315,25 @@ html::-webkit-scrollbar-thumb{
         margin: 1.3rem;
         font-size: 2.5rem;
     }
+
+    .boxpa{
+        width: 375px;
+        height: 200px;
+        font-size: 3rem;
+        transform: translateY(-30px);
+    }
+
+    .boxpa h3{
+        margin-top: 70px;
+    }
+
+    .boxP,
+    .boxH{
+        width: 250px;
+        height: 90px;
+        font-size: 3rem;
+    }
+
 
 
 }
