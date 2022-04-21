@@ -119,6 +119,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 .area{
+
+    height: 275px;
     position: relative;
     margin: 1rem;
     text-align: center;
