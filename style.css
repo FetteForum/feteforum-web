@@ -264,23 +264,26 @@ html::-webkit-scrollbar-thumb{
 
 @media (max-width:1366px){
     .boxpa{
-        width: 375px;
-        height: 200px;
+        width: 325px;
+        height: 175px;
         font-size: 3rem;
-        transform: translateY(-30px);
+        transform: translateY(-50px);
     }
 
     .boxpa h3{
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .boxP,
     .boxH{
-        width: 250px;
-        height: 90px;
-        font-size: 3rem;
+        width: 200px;
+        height: 80px;
+        font-size: 2.5rem;
     }
 
+    .area{
+        height: 175px;
+    }
     
 }
 
