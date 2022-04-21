@@ -281,10 +281,6 @@ html::-webkit-scrollbar-thumb{
         font-size: 2.5rem;
     }
 
-    .area{
-        height: 175px;
-    }
-    
 }
 
 @media (max-width:1140px){
@@ -320,22 +316,23 @@ html::-webkit-scrollbar-thumb{
     }
 
     .boxpa{
-        width: 375px;
-        height: 200px;
+        width: 275px;
+        height: 150px;
         font-size: 3rem;
-        transform: translateY(-30px);
+        transform: translateY(-40px);
     }
 
     .boxpa h3{
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .boxP,
     .boxH{
-        width: 250px;
-        height: 90px;
-        font-size: 3rem;
+        width: 210px;
+        height: 70px;
+        font-size: 2.5rem;
     }
+
 
 
 
