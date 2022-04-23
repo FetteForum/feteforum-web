@@ -144,7 +144,7 @@ html::-webkit-scrollbar-thumb{
     font-size: 3.75rem;
     display: inline-block;
     /* background-color: rgb(248, 244, 244); */
-    background-image: url(photo-1516450360452-9312f5e86fc7.avif);
+    background-image: url(ft.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 3rem;
@@ -362,7 +362,7 @@ html::-webkit-scrollbar-thumb{
     }
 
     .boxpa h3{
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .boxP,
@@ -371,31 +371,19 @@ html::-webkit-scrollbar-thumb{
         height: 60px;
         font-size: 2.25rem;
     }
+
+    .home .content h1{
+        font-size: 5rem;
+        /* text-transform: capitalize; */
+    }
+
+    .home .content h1 span{
+        font-size: 5rem;
+        /* text-transform: capitalize; */
+    }
 }
 
-@media (max-width:550px){
-    
-    .area{
-        height: 185px;
-    }
-    .boxpa{
-        width: 180px;
-        height: 125px;
-        font-size: 3rem;
-        transform: translateY(-20px);
-    }
 
-    .boxpa h3{
-        margin-top: 40px;
-    }
-
-    .boxP,
-    .boxH{
-        width: 150px;
-        height: 60px;
-        font-size: 2.25rem;
-    }
-}
 
 
 
@@ -427,7 +415,7 @@ html::-webkit-scrollbar-thumb{
         }
     
         .boxpa h3{
-            margin-top: 40px;
+            margin-top: 20px;
         }
     
         .boxP,
@@ -448,3 +436,104 @@ html::-webkit-scrollbar-thumb{
 
 }
 
+@media (max-width:290px){
+
+
+    
+    .area{
+        height: 165px;
+    }
+    .boxpa{
+        width: 120px;
+        height: 100px;
+        font-size: 2.5rem;
+        transform: translateY(-25px);
+    }
+
+    .boxpa h3{
+        margin-top: 15px;
+    }
+
+    .boxP,
+    .boxH{
+        width: 80px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .boxP h3,
+    .boxH h3{
+        transform: translateX(-7px);
+    }
+
+
+html{
+    font-size: 50%;
+}
+
+.header{
+    padding: 1.5rem 2rem;
+}
+
+.featured-heading{
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+}
+
+@media (max-width:250px){
+
+
+    
+    .area{
+        height: 165px;
+    }
+    .boxpa{
+        width: 100px;
+        height: 90px;
+        font-size: 2.5rem;
+        transform: translateY(-25px);
+    }
+
+    .boxpa h3{
+        margin-top: 15px;
+    }
+
+    .boxP,
+    .boxH{
+        width: 60px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .boxP h3,
+    .boxH h3{
+        transform: translateX(-15px);
+    }
+
+
+html{
+    font-size: 50%;
+}
+
+.header{
+    padding: 1.5rem 2rem;
+}
+
+.featured-heading{
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.home .content h1{
+    font-size: 4rem;
+    /* text-transform: capitalize; */
+}
+
+.home .content h1 span{
+    font-size: 4rem;
+    /* text-transform: capitalize; */
+}
+
+}
