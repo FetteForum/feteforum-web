@@ -1,6 +1,30 @@
 
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+}
+
 body{
-    background-color: #151320;
+    height: 100vh;
+    background: linear-gradient(135deg, #f55c5c 0%,#f53d3d 100%);
+}
+
+
+p{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
 }
 .register .nav-tabs .nav-link:hover{
     border: none;
@@ -12,36 +36,39 @@ body{
     padding: 10%;
     margin-left: 30%;
 }
+
+
 .form-new{
     margin-right: 22%;
     margin-left: 20%;
 }
-.register-heading{
-    margin-left: 21%;
-    margin-bottom: 10%;
-    color: #e9ecef;
-}
-.register-heading h1{
-    margin-left: 21%;
-    margin-bottom: 10%;
-    color: #e9ecef;
-}
+
 .register{
-    background-color: #222;
+    text-align: center;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #f1ebeb;
     margin-top: 3%;
     padding: 3%;
     border-radius: 2.5rem;
 }
 .btnSubmit
 {
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: #fff;
-    background-color: #3867d6;
     border: none;
+    border-radius: 3px;
+    padding: 1.5%;
+    background: linear-gradient(135deg, #f55c5c 0%,#f53d3d 100%);
+    color: #ffffff;
     cursor: pointer;
     margin-right: 6%;
-    color: rgb(246, 246, 252);
     margin-top: 4%;
+}
+
+@media (max-width:400px) { 
+
+
+    p{
+        font-size: 10px;
+    }
+    
+    
 }

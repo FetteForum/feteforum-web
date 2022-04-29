@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
 
-@font-face {
-    font-family: LemonMilk;
-    src: url(Borg.ttf);
-  }
 :root{
     --main-color:#ff0d00;
 }
@@ -18,7 +14,6 @@
     /* text-transform: capitalize; */
     transition: .2s linear;
 }
-
 
 .ul{
     list-style: none;
@@ -42,6 +37,69 @@ html::-webkit-scrollbar-thumb{
     background: var(--main-color);
     border-radius: 5rem;
 }
+
+
+.header{
+    
+    position: fixed;
+    margin-bottom: 50px;
+    top: 0; left: 0; right: 0;
+    z-index: 10000;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+
+}
+
+.header .logo{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 2rem;
+}
+
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: none;
+}
+
+.home .content h3{
+    color: rgb(0, 0, 0);
+    font-size: 5.5rem;
+    /* text-transform: uppercase; */
+}
+
+.home .content h3 span{
+    font-size: 5.5rem;
+    color:var(--main-color);
+    /* text-transform: capitalize; */
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
 
 .bar{
     position: relative;
@@ -74,38 +132,17 @@ html::-webkit-scrollbar-thumb{
     display: none;
 }
 
+.content h3{
+    margin: 5%;
+}
 
 .wrapper{
     width: 95%;
-    margin: 0 auto;
+    margin: 2rem;
 }
 
-#search-container{
-    margin: 3em 0;
-}
 
-#search-container input{
-    background-color: transparent;
-    width: 40%;
-    border-bottom: 2px solid #110f29;
-    padding: 1em 0.3em;
-}
-
-#search-container input:focus{
-    border-bottom-color: var(--main-color);
-}
-
-#search-container button{
-    padding: 1em 2em;
-    margin-left: 1em;
-    background-color: var(--main-color);
-    color: #ffffff;
-    border-radius: 5px;
-    margin-top: 0.5em;
-    font-size: 2rem;
-}
-
-.button-value {
+.button-valueE {
     margin: 0.5rem;
     display: inline-block;
     border: 2px solid var(--main-color);
@@ -117,8 +154,62 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+.button-valueA {
+    margin: 0.5rem;
+    display: inline-block;
+    border: 2px solid #0066ff;
+    font-size: 1.5rem;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #0066ff;
+    cursor: pointer;
+}
+
+/* events */
+
+.series img
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card__info{
+    margin-bottom: 1rem;
+}
 
 
+.card_title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    background-color: rgb(238, 236, 236);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.latest{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 5rem;
+    background-color: #ffffff
+}
+
+
+
+.heading{
+    border-bottom: 3px solid var(--main-color);
+    margin: 30px 30px 30px 30px;
+    
+}
+
+.heading{
+    font-size: 5rem;
+}
 
 
 
@@ -145,21 +236,6 @@ html::-webkit-scrollbar-thumb{
         grid-gap: 20px;
     }
 
-    .card{
-        grid-column-end: span 12 ;
-    }
-
-    .card_image-container {
-        border-radius: 10px;
-        width: 100%;
-        height: 250px;
-        padding-bottom: 10%;
-        overflow: hidden;
-        position: relative;
-    }
-
-    
-
 }
 
 @media (max-width:1140px){
@@ -171,22 +247,25 @@ html::-webkit-scrollbar-thumb{
 
     .bar .navbar{
         position: absolute;
+        display: flex;
+        flex-direction: column;
         top: 0; left: 0; right: 0;
         border-top: .1rem solid #222;
         background: rgb(224, 222, 222);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
     }
 
-    .bar .navbar.active{
+    /* .bar .navbar.active{
        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
+    } */
 
-    .fa-times{
+    /* .fa-times{
         transform: rotate(180deg);
-    }
+    } */
 
     .bar .navbar a{
         display: flex;
+        flex-direction: column;
         background: rgb(255, 255, 255);
         border-radius: .5rem;
         padding: 1.3rem;
@@ -240,6 +319,113 @@ html::-webkit-scrollbar-thumb{
         padding: 1.5rem 2rem;
     }
 
+
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .showcase-box{
+        width: 322px;
+        height: 187px;
+    }
+
+
+}
+
+@media (max-width:1140px){
+
+    #menu-bars{
+        display: initial;
+
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        border-top: .1rem solid #222;
+        background: rgb(224, 222, 222);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a{
+        display: flex;
+        background: rgb(255, 255, 255);
+        border-radius: .5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2.5rem;
+    }
+    
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+        /* margin-bottom: 25px; */
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 35rem;
+    }
+
+
+
+
+
+
+}
+
+@media (max-width:370px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .btn{
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 37rem;
+    }
 
 }
 

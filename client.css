@@ -5,6 +5,7 @@ h2{
 /* Slider */
 
 .slick-slide {
+   
     margin: 0px 10px;
 }
 
@@ -32,6 +33,7 @@ h2{
 
 .slick-list
 {
+    
     position: relative;
     display: block;
     overflow: hidden;

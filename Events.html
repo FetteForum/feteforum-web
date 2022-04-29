@@ -7,7 +7,7 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="Events.css">
-
+  
     <link rel="stylesheet" href="atcb.min.css">
 
 
@@ -18,6 +18,8 @@
     
 
     <!-- font awesome cdn link -->
+
+    
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
@@ -51,72 +53,28 @@
 
     </header>
 
+
     <section>
+
       <div class="container">
-        <div class="left"></div>
         <div class="right">
           <div class="content">
             <!-- Name -->
             <div class="top">
-              <h1>Paint Party</h1> 
-              <div class="wrapper">
-                <div class="toggle_button">
-                  <ul>
-                    <li>
-                      <a class="share_btn">
-                        <!-- <span class="text"></span> -->
-                        <span class="icon"><i class="fas fa-plus"></i></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sm facebook">
-                        <span class="icon">
-                          <i class="fab fa-facebook-f"></i>
-                        </span>
-                        <span class="text"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sm twitter">
-                        <span class="icon">
-                          <i class="fab fa-twitter"></i>
-                        </span>
-                        <span class="text"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sm instagram">
-                        <span class="icon">
-                          <i class="fab fa-instagram"></i>
-                        </span>
-                        <span class="text"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sm reddit">
-                        <span class="icon">
-                          <i class="fab fa-reddit-alien"></i>
-                        </span>
-                        <span class="text"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <h1 class="headtop">Paint Party</h1> 
+            </div>
+
+            <div class="main_div">
+              <div class="social_media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
               </div>
-            
-            <script>
-              var share_btn = document.querySelector(".share_btn");
-              var toggle_button = document.querySelector(".toggle_button");
-            
-              share_btn.addEventListener("click", function(){
-                toggle_button.classList.toggle("active");
-              })
-            </script>
-              
             </div>
             
             <!-- Date & Time -->
-            <h2>25 <sup>th</sup> December 2022 <br> 10pm till</h2>
+            <h2>25 <sup>th</sup> December <br> 10pm till</h2>
             <div class="atcb" >
               {
                 "name":"Add the title of your event",
@@ -141,12 +99,23 @@
             <!-- Location -->
             <h2>Electro House</h2>
             <a href=" http://maps.google.com/?q=115 Dinsley Junction, Eastern Main Road, Tacarigua"  target="_blank" class="locate">View Location</a>
+            <!-- Featured -->
+            <h2>Featured Guests</h2>
+            <p>
+              <li>Person A</li>
+              <li>Person B</li>
+          
+            </p>
             <!-- Promos -->
             <h2>Promotions</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eos laborum eius officiis, sit minus?</p>
+            <!-- Get Listed -->
+            <h2>Get Listed</h2>
+            <a href="Listed.html" class="locate">Get Listed</a>
             <!-- Purchases -->
             <h2>Purchase Tickets</h2><a href="" class="btn"></a>
             <p>Ladies Free | Early Birds $100 | Regular $250</p>
+
 
             
           </div>
@@ -157,13 +126,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
 
+    <script src="atcb.min.js" defer></script>
 
     <!-- custom js file link -->
-    <script src="swiper-bundle.min.js"></script>
-    <script src="Home.js"></script>
-
-    <script src="indexscript.js"></script>
-    <script src="atcb.min.js" defer></script>
     
     
 </body>
