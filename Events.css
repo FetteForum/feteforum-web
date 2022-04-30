@@ -93,7 +93,7 @@ html::-webkit-scrollbar-thumb{
 
 
 section{
-    background-image: url(4Blur.png);
+    background-image: url(/4Blur.png);
    /* Add the blur effect
   filter: blur(8px);
   -webkit-filter: blur(8px); */
