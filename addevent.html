@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="addevent.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+     
+    <div class="container">
+        <div class="text">Add your event</div>
+        <form method="post" autocomplete="off" name="google-sheet">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required name="Name">
+                 <div class="underline"></div>
+                 <label for="">Name</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required name="Phone">
+                 <div class="underline"></div>
+                 <label for="">Phone Number</label>
+              </div>
+              <div class="input-data">
+                <input type="text" required name="Email">
+                <div class="underline"></div>
+                <label for="">Email Address</label>
+             </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required name="Event">
+                 <div class="underline"></div>
+                 <label for="">Event Name</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required name="Time">
+                 <div class="underline"></div>
+                 <label for="">Event Date & Time</label>
+              </div>
+           </div>
+
+           <div class="form-row">
+            <div class="input-data">
+               <input type="text" required name="Location">
+               <div class="underline"></div>
+               <label for="">Event Location</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required name="Price">
+               <div class="underline"></div>
+               <label for="">Prices</label>
+            </div>
+         </div>
+
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required name="Type">
+               <div class="underline"></div>
+               <label for="">Event Type(LadiesFree, BusRide etc.)</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required name="Promo">
+               <div class="underline"></div>
+               <label for="">Promotional Text</label>
+            </div>
+         </div>
+
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required name="Guests">
+               <div class="underline"></div>
+               <label for="">Performers
+                  /Guests</label>
+            </div>
+
+            <div class="input-data">
+               <input type="text" required name="Notes">
+               <div class="underline"></div>
+               <label for="">Special Notes</label>
+            </div>
+         </div>
+           
+           <div class="form-row">
+
+              <div class="input-data textarea">
+
+                 <div class="form-row submit-btn">
+                    <div class="input-data">
+                       <div class="inner"></div>
+                       <input type="submit" name="submit" value="Submit">
+                    </div>
+                 </div>
+                 <br />
+
+              </div>
+           </div>
+        </form>
+     </div>
+
+    <script src="addevents.js"></script>
+  </body>
+</html>

@@ -53,34 +53,36 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="mail.php" method="post" enctype="text/plain" autocomplete="off">
+          <!-- mail.php to be inserted and tested -->
+          <form method="post" autocomplete="off" name="google-sheet">
             <h3 class="title">Join our Community</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" required="" />
+              <input type="text" name="Name" class="input" required="" />
               <label for="">Name</label>
               <span>Name</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input"required="" />
+              <input type="text" name="Email" class="input"required="" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" required=""/>
+              <input type="text" name="Phone" class="input" required=""/>
               <label for="">Phone</label>
               <span>Phone</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input" required=""></textarea>
+              <input type="text" name="Category" class="input" required=""></input>
               <label for="">Category</label>
               <span>Category</span>
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <input type="submit" name="submit" class="btn" value="Submit" />
           </form>
         </div>
       </div>
     </div>
 
     <script src="app.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
