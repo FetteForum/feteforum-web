@@ -93,18 +93,6 @@ html::-webkit-scrollbar-thumb{
 
 
 section{
-    background-image: url(/4Blur.png);
-   /* Add the blur effect
-  filter: blur(8px);
-  -webkit-filter: blur(8px); */
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
     margin-top: 5%;
   min-height: 140vh;
   width: 100%;
@@ -123,7 +111,6 @@ section{
     display: inline-block;
 }
 .container{
-    z-index: 100;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
