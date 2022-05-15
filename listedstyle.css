@@ -1,7 +1,6 @@
 
 *{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -12,19 +11,7 @@
 }
 
 body{
-    height: 100vh;
-    background: linear-gradient(135deg, #f55c5c 0%,#f53d3d 100%);
-}
-
-
-p{
-    position: relative;
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    color: #606060;
-    font-size: 14px;
-    font-weight: 400;
+    background-color: #ffffff;
 }
 .register .nav-tabs .nav-link:hover{
     border: none;
@@ -37,12 +24,21 @@ p{
     margin-left: 30%;
 }
 
-
 .form-new{
     margin-right: 22%;
     margin-left: 20%;
 }
-
+.register-heading{
+    font-size: 2.5rem;
+    /* margin-left: 21%; */
+    margin-bottom: 10%;
+    color: #000000;
+}
+/* .register-heading h1{
+    margin-left: 21%;
+    margin-bottom: 10%;
+    color: #000000;
+} */
 .register{
     text-align: center;
     /* background-color: rgb(255, 255, 255); */
@@ -53,22 +49,25 @@ p{
 }
 .btnSubmit
 {
-    border: none;
-    border-radius: 3px;
+    width: 50%;
+    border-radius: 1rem;
     padding: 1.5%;
-    background: linear-gradient(135deg, #f55c5c 0%,#f53d3d 100%);
-    color: #ffffff;
+    color: #fff;
+    background-color: #a72c2c;
+    border: none;
     cursor: pointer;
     margin-right: 6%;
+    color: rgb(246, 246, 252);
     margin-top: 4%;
 }
 
 @media (max-width:400px) { 
 
-
-    p{
-        font-size: 10px;
+    .register-heading{
+        font-size: 1.5rem;
+        /* margin-left: 21%; */
+        margin-bottom: 10%;
+        color: #000000;
     }
-    
     
 }

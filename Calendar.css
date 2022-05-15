@@ -211,7 +211,17 @@ html::-webkit-scrollbar-thumb{
     font-size: 5rem;
 }
 
+.date{
+    margin: 5px;
+    padding: 10px;
+     position:absolute;
+     background-color: rgb(226, 222, 222);
+     border-radius: 50%;
+     color: #222;
+     font-size: 20px;
+     font-weight: 500;
 
+}
 
 @media (max-width:991px){
 
@@ -247,25 +257,22 @@ html::-webkit-scrollbar-thumb{
 
     .bar .navbar{
         position: absolute;
-        display: flex;
-        flex-direction: column;
         top: 0; left: 0; right: 0;
         border-top: .1rem solid #222;
         background: rgb(224, 222, 222);
-        /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    /* .bar .navbar.active{
+    .bar .navbar.active{
        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    } */
+    }
 
-    /* .fa-times{
+    .fa-times{
         transform: rotate(180deg);
-    } */
+    }
 
     .bar .navbar a{
         display: flex;
-        flex-direction: column;
         background: rgb(255, 255, 255);
         border-radius: .5rem;
         padding: 1.3rem;
