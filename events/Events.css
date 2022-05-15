@@ -43,10 +43,10 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-
-/* body{
-    background: #444;
-} */
+/* 
+body{
+    overflow: scroll;
+}  */
 
 
 .header{
@@ -113,7 +113,7 @@ section{
 .container{
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,6 +124,7 @@ section{
 
 .right{
     width: 100%;
+    margin-top: 40px;
     min-height: 400px;
     background-color: #f1ebeb;
     display: flex;
@@ -333,19 +334,19 @@ section{
 }
 
 .right h1{
-    font-size: 35px;
-    font-weight: 250px;
+    font-size: 30px;
+    font-weight: 245px;
 }
 .right h2{
-    font-size: 25px;
-    margin-top: 15px;
-    font-weight: 250px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 245px;
 }
 .right p{
     margin: 17px 0;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 90px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 85px;
 }
     
 
@@ -358,7 +359,7 @@ section{
 @media (max-width:450px){
 
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
 
     section{
@@ -375,7 +376,7 @@ section{
     .right{
         width: 100%;
         margin: 0;
-        margin-top: -100px;
+        margin-top: 20px;
     }
 
 }
@@ -383,7 +384,7 @@ section{
 @media (max-width:375px){
 
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
 
     section{
@@ -402,7 +403,7 @@ section{
     .right{
         width: 100%;
         margin: 0;
-        margin-top: -100px;
+        margin-top: 40px;
     }
 
 
