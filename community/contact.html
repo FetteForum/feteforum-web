@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Form Guidelines</h3>
+          <p class="text">
+            In the spaces provided, put the required information.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <p>Categories : DJ, Artiste, Venue, Caterer, Dancer, Photographer, etc.</p>
+            </div>
+            <div class="information">
+                <p>By completing this form you agree that the information collected can be used by Fete Forum Ltd. and respective parties. </p>
+              </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <!-- mail.php to be inserted and tested -->
+          <form method="post" autocomplete="off" name="google-sheet">
+            <h3 class="title">Join our Community</h3>
+            <div class="input-container">
+              <input type="text" name="Name" class="input" required="" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Email" class="input"required="" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Phone" class="input" required=""/>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <input type="text" name="Category" class="input" required=""></input>
+              <label for="">Category</label>
+              <span>Category</span>
+            </div>
+            <input type="submit" name="submit" class="btn" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
